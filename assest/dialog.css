@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #f2f2f2;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.topContainer {
+  flex-direction: row;
+  height: 10vh;
+  width: 100%;
+}
+.topRight {
+  float: right;
+  width: 70%;
+}
+.boxContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80vh;
+}
+
+.leftContainer {
+  height: 80vh;
+  width: 30%;
+}
+.rightContainer {
+  width: 70%;
+}
+.leftContainer textarea {
+  width: 80%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 65%;
+  background-color: #fff;
+  border-color: royalblue;
+  border-width: 4px;
+  border-radius: 25px;
+  padding: 25px;
+  font-size: 18px;
+}
+
+#dialogue {
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  border-width: 4px;
+  margin-top: 0;
+  background-color: #fff;
+  height: 55%;
+  overflow-y: scroll;
+}
+.individualDialogue,
+.individualDialogueRight {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.avatar {
+  border-radius: 50%;
+  height: 50px;
+}
+#dialogue p {
+  margin-left: 10px;
+  /* change the value of color as you want */
+  background-color: #f0f0f0;
+  border-radius: 25px;
+  padding: 10px 20px 10px 20px;
+}
+
+.individualDialogueRight {
+  margin-left: auto;
+}
+
+button {
+  background-color: #6f9970; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+button:hover {
+  background-color: #4caf50; /* Green */
+}
+.peopleAreaClass {
+  display: flex;
+  background-color: #fff;
+  border-radius: 25px;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 10px;
+  flex-direction: row;
+}
+.people {
+  margin-top: 15px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.avatar1 {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+.hiddenTop {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .topContainer {
+    display: none;
+  }
+  .boxContainer {
+    flex-direction: column;
+  }
+  .leftContainer,
+  .rightContainer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .leftContainer textarea {
+    width: 80%;
+  }
+  .hiddenTop {
+    display: block;
+    text-align: center;
+  }
+}
